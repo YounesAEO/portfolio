@@ -10,7 +10,7 @@ const Footer = () => {
 			<a href="#" className="footer-logo">
 				YounesAEO
 			</a>
-			<ul>
+			<ul className="permalinks">
 				<li>
 					<a href="#">Home</a>
 				</li>
@@ -32,22 +32,22 @@ const Footer = () => {
 				<li>
 					<a href="#contact">Contact</a>
 				</li>
-				<div className="footer-socials">
-					<a href="https://facebook.com">
-						<FaFacebookF />
-					</a>
-					<a href="https://instagram.com">
-						<FiInstagram />
-					</a>
-					<a href="https://twitter.com">
-						<IoLogoTwitter />
-					</a>
-				</div>
-
-				<div className="footer-copyrights">
-					<small>&copy; Younes AEO. All rights reserved. </small>
-				</div>
 			</ul>
+			<div className="footer-socials">
+				<a href="https://facebook.com">
+					<FaFacebookF />
+				</a>
+				<a href="https://instagram.com">
+					<FiInstagram />
+				</a>
+				<a href="https://twitter.com">
+					<IoLogoTwitter />
+				</a>
+			</div>
+
+			<div className="footer-copyrights">
+				<small>&copy; Younes AEO. All rights reserved. </small>
+			</div>
 		</footer>
 	);
 };
