@@ -9,11 +9,17 @@ const Header = () => {
 			<div className="container header-container">
 				<h5>Hello I'm</h5>
 				<h1>Younes ABOU EL OMOUM</h1>
-				<h5 className="text-light"> FullStack Developer & AI Nerd</h5>
+				<h5 className="text-light">
+					{' '}
+					I build stuff & nerd out about AI from time to time
+				</h5>
 				<Cta />
 				<HeaderSocials />
 				<div className="my-pic">
-					<img src={require('../../assets/me.png')} alt="my pic" />
+					<img
+						src={require('../../assets/yns-cartoon1.png')}
+						alt="my pic"
+					/>
 				</div>
 				<a href="#contact" className="scroll-down">
 					Scroll Down
