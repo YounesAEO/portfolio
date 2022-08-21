@@ -28,6 +28,15 @@
 	margin: 0.8rem auto 0;
 }
 
+.client-role,
+.client-role a {
+	color: var(--color-bg);
+}
+
+.client-role a:hover {
+	color: var(--color-primary);
+}
+
 .swiper-pagination-clickable .swiper-pagination-bullet {
 	background: var(--color-primary);
 }
