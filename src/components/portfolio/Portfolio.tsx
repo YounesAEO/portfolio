@@ -4,42 +4,42 @@ import './portfolio.css';
 const data = [
 	{
 		id: 1,
-		github: 'https://github.com',
-		demo: 'https://dribble.com',
-		image: require('../../assets/portfolio1.jpg'),
-		title: 'This is a portfolio item title',
+		github: 'https://github.com/YounesAEO/webscraper',
+		demo: 'https://african-webscraper.herokuapp.com/index2.html',
+		image: require('../../assets/webscraper.png'),
+		title: 'African Startups WebScraper',
 	},
 	{
 		id: 2,
-		github: 'https://github.com',
+		github: 'https://github.com/YounesAEO/traffic-vision',
 		demo: 'https://dribble.com',
 		image: require('../../assets/portfolio2.jpg'),
-		title: 'This is a portfolio item title',
+		title: 'Traffic Vision',
 	},
 	{
 		id: 3,
-		github: 'https://github.com',
+		github: 'https://github.com/YounesAEO/swapb',
 		demo: 'https://dribble.com',
 		image: require('../../assets/portfolio3.jpg'),
-		title: 'This is a portfolio item title',
+		title: 'SwapB',
 	},
 	{
 		id: 4,
-		github: 'https://github.com',
+		github: 'https://github.com/YounesAEO/dense-cell-counting',
 		demo: 'https://dribble.com',
 		image: require('../../assets/portfolio4.jpg'),
-		title: 'This is a portfolio item title',
+		title: 'CSRNet For Cell Counting in Highly Congested Scenes',
 	},
 	{
 		id: 5,
-		github: 'https://github.com',
+		github: 'https://github.com/google-maps-clone',
 		demo: 'https://dribble.com',
 		image: require('../../assets/portfolio5.png'),
 		title: 'This is a portfolio item title',
 	},
 	{
 		id: 6,
-		github: 'https://github.com',
+		github: 'https://github.com/travel-log-app',
 		demo: 'https://dribble.com',
 		image: require('../../assets/portfolio6.jpg'),
 		title: 'This is a portfolio item title',
@@ -69,7 +69,7 @@ const Portfolio = () => {
 									href={demo}
 									className="btn btn-primary"
 									target="_blank">
-									Live Demo
+									Demo
 								</a>
 							</div>
 						</article>
