@@ -23,7 +23,7 @@
 
 .contact-option:hover {
 	background: transparent;
-	border-color: var(--color-primary-variant);
+	border-color: var(--color-primary);
 }
 
 .contact-icon {
@@ -35,6 +35,11 @@
 	margin-top: 0.7rem;
 	display: inline-block;
 	font-size: 0.8rem;
+	color: var(--color-bg);
+}
+
+.contact-option:hover a {
+	color: var(--color-bg-variant);
 }
 
 form {
@@ -49,9 +54,9 @@ textarea {
 	padding: 1.5rem;
 	border-radius: 0.5rem;
 	background: transparent;
-	border: 2px solid var(--color-primary-variant);
+	border: 2px solid var(--color-primary);
 	resize: none;
-	color: var(--color-white);
+	color: var(--color-primary);
 }
 
 /* ================================== MEDIA QUERIES (MEDIUM) =========================== */
