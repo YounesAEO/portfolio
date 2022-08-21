@@ -40,6 +40,14 @@
 	color: var(--color-primary);
 }
 
+.experience-details small {
+	color: var(--color-bg);
+}
+
+.experience-container > div:hover small {
+	color: var(--color-bg-variant);
+}
+
 /* ================================== MEDIA QUERIES (MEDIUM) =========================== */
 
 @media screen and (max-width: 1024px) {
