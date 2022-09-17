@@ -4,45 +4,45 @@ import './portfolio.css';
 const data = [
 	{
 		id: 1,
+		github: 'https://github.com/YounesAEO/travel-log-app',
+		demo: 'https://dribble.com',
+		image: require('../../assets/travel-log.png'),
+		title: 'Travel Log App',
+	},
+	{
+		id: 2,
 		github: 'https://github.com/YounesAEO/webscraper',
 		demo: 'https://african-webscraper.herokuapp.com/index2.html',
 		image: require('../../assets/webscraper.png'),
 		title: 'African Startups WebScraper',
 	},
 	{
-		id: 2,
-		github: 'https://github.com/YounesAEO/traffic-vision',
+		id: 3,
+		github: 'https://github.com/YounesAEO/yolov3-accident-detection',
 		demo: 'https://dribble.com',
-		image: require('../../assets/portfolio2.jpg'),
+		image: require('../../assets/traffic-vision.png'),
 		title: 'Traffic Vision',
 	},
 	{
-		id: 3,
-		github: 'https://github.com/YounesAEO/swapb',
-		demo: 'https://dribble.com',
-		image: require('../../assets/portfolio3.jpg'),
-		title: 'SwapB',
-	},
-	{
 		id: 4,
-		github: 'https://github.com/YounesAEO/dense-cell-counting',
+		github: 'https://github.com/YounesAEO/google-maps-clone',
 		demo: 'https://dribble.com',
-		image: require('../../assets/portfolio4.jpg'),
-		title: 'CSRNet For Cell Counting in Highly Congested Scenes',
+		image: require('../../assets/google-maps-clone.png'),
+		title: 'Google Maps Clone',
 	},
 	{
 		id: 5,
-		github: 'https://github.com/google-maps-clone',
+		github: 'https://github.com/YounesAEO/dense-cell-counting',
 		demo: 'https://dribble.com',
-		image: require('../../assets/portfolio5.png'),
-		title: 'This is a portfolio item title',
+		image: require('../../assets/cell-counting.png'),
+		title: 'CSRNet For Cell Counting in Highly Congested Scenes',
 	},
 	{
 		id: 6,
-		github: 'https://github.com/travel-log-app',
+		github: 'https://github.com/YounesAEO/polynomial-multiplication',
 		demo: 'https://dribble.com',
-		image: require('../../assets/portfolio6.jpg'),
-		title: 'This is a portfolio item title',
+		image: require('../../assets/multiplication.jpg'),
+		title: 'Polynomial Multiplication',
 	},
 ];
 const Portfolio = () => {
@@ -53,26 +53,28 @@ const Portfolio = () => {
 			<div className="container portfolio-container">
 				{data.map(({ id, github, demo, image, title }) => {
 					return (
-						<article className="portfolio-item" key={id}>
-							<div className="portfolio-img">
-								<img src={image} alt={title} />
-							</div>
-							<h3>{title}</h3>
-							<div className="portfolio-cta">
-								<a
+						<a href={github} target="_blank">
+							<article className="portfolio-item" key={id}>
+								<div className="portfolio-img">
+									<img src={image} alt={title} />
+								</div>
+								<h3>{title}</h3>
+								{/*<div className="portfolio-cta">
+								{/* <a
 									href={github}
 									className="btn"
 									target="_blank">
 									Github
-								</a>
-								<a
+								</a> */}
+								{/* <a
 									href={demo}
 									className="btn btn-primary"
 									target="_blank">
 									Demo
-								</a>
-							</div>
-						</article>
+								</a> 
+							</div> */}
+							</article>
+						</a>
 					);
 				})}
 			</div>
