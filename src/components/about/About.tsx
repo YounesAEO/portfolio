@@ -23,7 +23,7 @@ const About = () => {
 						<article className="about-card">
 							<FaAward className="about-icon" />
 							<h5>Experience</h5>
-							<small>3+ Years</small>
+							<small>1+ Years</small>
 						</article>
 
 						<article className="about-card">
@@ -41,14 +41,15 @@ const About = () => {
 
 					<p>
 						I define myself as a builder, simply because my most
-						valuable skill is understanding my clients pain and
-						build stuff that solves it. My experience in{' '}
+						valuable skill is understanding people's pain and
+						building stuff that solves it. My experience in one of
+						the biggest startup incubators in Africa,{' '}
 						<a href="https://www.lastartupstation.co/">
 							@LaStartupStation
-						</a>{' '}
-						helped me develop a business acumen and at the same time
-						broadened my knowledge on technology, design and problem
-						solving.
+						</a>
+						, helped me develop a business acumen and at the same
+						time broadened my knowledge on technology, design and
+						problem solving.
 					</p>
 					<a href="#contact" className="btn btn-primary">
 						Let's Talk
