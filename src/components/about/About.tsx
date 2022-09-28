@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import { FaAward } from 'react-icons/fa';
+import { FaAward, FaUniversity } from 'react-icons/fa';
 import { IoIosSchool } from 'react-icons/io';
 import { VscFolderLibrary } from 'react-icons/vsc';
 
@@ -33,9 +33,9 @@ const About = () => {
 						</article>
 
 						<article className="about-card">
-							<VscFolderLibrary className="about-icon" />
-							<h5>Projects</h5>
-							<small>80+ Completed</small>
+							<FaUniversity className="about-icon" />
+							<h5>Masters Degree</h5>
+							<small>In Digital Transformation</small>
 						</article>
 					</div>
 
@@ -52,7 +52,7 @@ const About = () => {
 						problem solving.
 					</p>
 					<a href="#contact" className="btn btn-primary">
-						Let's Talk
+						Learn More
 					</a>
 				</div>
 			</div>
