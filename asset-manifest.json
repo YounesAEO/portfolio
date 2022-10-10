@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.66743099.css",
-    "main.js": "/portfolio/static/js/main.23e09b5d.js",
-    "static/media/multiplication.jpg": "/portfolio/static/media/multiplication.161a24794d38d9469ff0.jpg",
+    "main.js": "/portfolio/static/js/main.e41348a7.js",
     "static/media/google-maps-clone.png": "/portfolio/static/media/google-maps-clone.51699683cb6d59e89be3.png",
     "static/media/yns-cartoon1.png": "/portfolio/static/media/yns-cartoon1.8f330d0c445118894f09.png",
     "static/media/portfolio-pdp1.jpg": "/portfolio/static/media/portfolio-pdp1.48b752e81f3ab822ba6d.jpg",
@@ -14,12 +13,13 @@
     "static/media/mehdi.webp": "/portfolio/static/media/mehdi.a40378f37db372ade1be.webp",
     "static/media/hassouni.jpg": "/portfolio/static/media/hassouni.1ba70a5067b0fcda8057.jpg",
     "static/media/vannary.jpeg": "/portfolio/static/media/vannary.8301382a2cbfac30d5cd.jpeg",
+    "static/media/hi.jfif": "/portfolio/static/media/hi.49b811a7fcb9d1552212.jfif",
     "index.html": "/portfolio/index.html",
     "main.66743099.css.map": "/portfolio/static/css/main.66743099.css.map",
-    "main.23e09b5d.js.map": "/portfolio/static/js/main.23e09b5d.js.map"
+    "main.e41348a7.js.map": "/portfolio/static/js/main.e41348a7.js.map"
   },
   "entrypoints": [
     "static/css/main.66743099.css",
-    "static/js/main.23e09b5d.js"
+    "static/js/main.e41348a7.js"
   ]
 }
