@@ -113,8 +113,12 @@ const exp_mgmt = [
 		level: 'Intermediate',
 	},
 	{
+		skill: 'Docker',
+		level: 'Experienced',
+	},
+	{
 		skill: 'Notion',
-		level: 'Intermediate',
+		level: 'Experienced',
 	},
 ];
 
