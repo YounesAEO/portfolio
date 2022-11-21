@@ -63,8 +63,8 @@ const exp_back = [
 		level: 'Experienced',
 	},
 	{
-		skill: 'OAuth',
-		level: 'Experienced',
+		skill: 'Docker',
+		level: 'Intermediate',
 	},
 	{
 		skill: 'Google APIs',
@@ -113,10 +113,6 @@ const exp_mgmt = [
 		level: 'Intermediate',
 	},
 	{
-		skill: 'Docker',
-		level: 'Experienced',
-	},
-	{
 		skill: 'Notion',
 		level: 'Experienced',
 	},
@@ -131,9 +127,11 @@ const Experience = () => {
 				<div className="experience-frontend">
 					<h3>Frontend Development</h3>
 					<div className="experience-content">
-						{exp_front.map(({ skill, level }) => {
+						{exp_front.map(({ skill, level }, index) => {
 							return (
-								<article className="experience-details">
+								<article
+									className="experience-details"
+									key={index}>
 									<BsPatchCheckFill className="experience-icon" />
 									<div>
 										<h4>{skill}</h4>
@@ -147,9 +145,11 @@ const Experience = () => {
 				<div className="experience-backend">
 					<h3>Backend Development</h3>
 					<div className="experience-content">
-						{exp_back.map(({ skill, level }) => {
+						{exp_back.map(({ skill, level }, index) => {
 							return (
-								<article className="experience-details">
+								<article
+									className="experience-details"
+									key={index}>
 									<BsPatchCheckFill className="experience-icon" />
 									<div>
 										<h4>{skill}</h4>
@@ -164,9 +164,11 @@ const Experience = () => {
 				<div className="experience-data">
 					<h3>AI & Data</h3>
 					<div className="experience-content">
-						{exp_data.map(({ skill, level }) => {
+						{exp_data.map(({ skill, level }, index) => {
 							return (
-								<article className="experience-details">
+								<article
+									className="experience-details"
+									key={index}>
 									<BsPatchCheckFill className="experience-icon" />
 									<div>
 										<h4>{skill}</h4>
@@ -181,9 +183,11 @@ const Experience = () => {
 				<div className="experience-data">
 					<h3>Management & Collaboration</h3>
 					<div className="experience-content">
-						{exp_mgmt.map(({ skill, level }) => {
+						{exp_mgmt.map(({ skill, level }, index) => {
 							return (
-								<article className="experience-details">
+								<article
+									className="experience-details"
+									key={index}>
 									<BsPatchCheckFill className="experience-icon" />
 									<div>
 										<h4>{skill}</h4>
