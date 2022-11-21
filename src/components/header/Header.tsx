@@ -46,7 +46,7 @@ const Header = () => {
 				<h1>Younes ABOU EL OMOUM</h1>
 				<h5 className="text-light">
 					{' '}
-					I build stuff & nerd out about AI from time to time
+					I build stuff & nerd out about startups sometimes
 				</h5>
 				<Cta />
 				<HeaderSocials />
