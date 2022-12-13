@@ -1,122 +1,7 @@
 import React from 'react';
 import './experience.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
-
-const exp_front = [
-	{
-		skill: 'HTML',
-		level: 'Experienced',
-	},
-	{
-		skill: 'CSS',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'JavaScript',
-		level: 'Experienced',
-	},
-	{
-		skill: 'Bootstrap',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'React',
-		level: 'Experienced',
-	},
-	{
-		skill: 'Tailwind',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'NextJs',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'SWR',
-		level: 'Intermediate',
-	},
-];
-
-const exp_back = [
-	{
-		skill: 'NodeJs',
-		level: 'Experienced',
-	},
-	{
-		skill: 'ExpressJs',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'MongoDB',
-		level: 'Experienced',
-	},
-	{
-		skill: 'Redis',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'MySQL',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'AWS S3',
-		level: 'Experienced',
-	},
-	{
-		skill: 'Docker',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'Google APIs',
-		level: 'Experienced',
-	},
-];
-
-const exp_data = [
-	{
-		skill: 'Python',
-		level: 'Experienced',
-	},
-	{
-		skill: 'PyTorch',
-		level: 'Learning',
-	},
-	{
-		skill: 'Scikit-learn',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'Pandas/Numpy',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'Neo4G',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'Neural Nets',
-		level: 'Learning',
-	},
-];
-
-const exp_mgmt = [
-	{
-		skill: 'Scrum',
-		level: 'Experienced',
-	},
-	{
-		skill: 'Kanban',
-		level: 'Experienced',
-	},
-	{
-		skill: 'Git',
-		level: 'Intermediate',
-	},
-	{
-		skill: 'Notion',
-		level: 'Experienced',
-	},
-];
+import { EXP_BACK, EXP_DATA, EXP_FRONT, EXP_MGMT } from '../../utils/constants';
 
 const Experience = () => {
 	return (
@@ -127,7 +12,7 @@ const Experience = () => {
 				<div className="experience-frontend">
 					<h3>Frontend Development</h3>
 					<div className="experience-content">
-						{exp_front.map(({ skill, level }, index) => {
+						{EXP_FRONT.map(({ skill, level }, index) => {
 							return (
 								<article
 									className="experience-details"
@@ -145,7 +30,7 @@ const Experience = () => {
 				<div className="experience-backend">
 					<h3>Backend Development</h3>
 					<div className="experience-content">
-						{exp_back.map(({ skill, level }, index) => {
+						{EXP_BACK.map(({ skill, level }, index) => {
 							return (
 								<article
 									className="experience-details"
@@ -164,7 +49,7 @@ const Experience = () => {
 				<div className="experience-data">
 					<h3>AI & Data</h3>
 					<div className="experience-content">
-						{exp_data.map(({ skill, level }, index) => {
+						{EXP_DATA.map(({ skill, level }, index) => {
 							return (
 								<article
 									className="experience-details"
@@ -183,7 +68,7 @@ const Experience = () => {
 				<div className="experience-data">
 					<h3>Management & Collaboration</h3>
 					<div className="experience-content">
-						{exp_mgmt.map(({ skill, level }, index) => {
+						{EXP_MGMT.map(({ skill, level }, index) => {
 							return (
 								<article
 									className="experience-details"
