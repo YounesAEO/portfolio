@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
-import { BsWhatsapp } from 'react-icons/bs';
+import { BsTwitter } from 'react-icons/bs';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css';
@@ -52,10 +52,10 @@ const Contact = () => {
 					</article>
 
 					<article className="contact-option">
-						<BsWhatsapp />
-						<h4>Whatsapp</h4>
-						<h5>+33 7 84 99 01 46</h5>
-						<a href="https://api.whatsapp.com/send?phone=+33784990146">
+						<BsTwitter />
+						<h4>Twitter</h4>
+						<h5>@YAbouelomoum</h5>
+						<a href="https://twitter.com/messages/compose?recipient_id=1493266109419696135">
 							Send a message
 						</a>
 					</article>
