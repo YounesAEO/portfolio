@@ -2,7 +2,6 @@ import React from 'react';
 import './about.css';
 import { FaAward, FaUniversity } from 'react-icons/fa';
 import { IoIosSchool } from 'react-icons/io';
-import { VscFolderLibrary } from 'react-icons/vsc';
 
 const About = () => {
 	return (

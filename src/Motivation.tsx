@@ -4,7 +4,6 @@ import Reason from './components/reason/Reason';
 import { Link } from 'react-router-dom';
 import { TiArrowBack } from 'react-icons/ti';
 import { GrLinkTop } from 'react-icons/gr';
-import Footer from './components/footer/Footer';
 
 const Motivation = () => {
 	return (
@@ -15,7 +14,7 @@ const Motivation = () => {
 				title="Go back to portfolio">
 				<TiArrowBack />
 			</Link>
-			<p>
+			<p id="start">
 				{' '}
 				If my super complicated algorithm works, You gotta be Ali. I'm
 				actually proud I got you to this page! <br />
@@ -34,7 +33,7 @@ const Motivation = () => {
 					/>
 				);
 			})}
-			<a href="#" className="back-to-top" title="Back to top">
+			<a href="#start" className="back-to-top" title="Back to top">
 				<GrLinkTop />
 			</a>
 		</div>

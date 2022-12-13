@@ -10,7 +10,11 @@ const Portfolio = () => {
 			<div className="container portfolio-container">
 				{PORTFOLIO_DATA.map(({ id, github, demo, image, title }) => {
 					return (
-						<a href={github} target="_blank" key={id}>
+						<a
+							href={github}
+							target="_blank"
+							key={id}
+							rel="noreferrer">
 							<article className="portfolio-item">
 								<div className="portfolio-img">
 									<img src={image} alt={title} />

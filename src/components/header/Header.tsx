@@ -27,9 +27,9 @@ const Header = () => {
 		} else {
 			setIsFromUS(true);
 		}
-	});
+	}, []);
 	return (
-		<header>
+		<header id="header">
 			{isFromUS && (
 				<div className="cover">
 					{/* <div className="arrow">
