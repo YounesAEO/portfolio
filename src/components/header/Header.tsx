@@ -4,6 +4,7 @@ import Cta from './Cta';
 import HeaderSocials from './HeaderSocials';
 import { getLocationFromIp } from '../../utils/geo';
 import { ReactComponent as Arrow } from '../../assets/arrow-2.svg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 	const [isFromUS, setIsFromUS] = useState(false);
@@ -20,7 +21,12 @@ const Header = () => {
 				setIsFromUS(localStorage.getItem('yaeo-country') === 'true');
 			}
 		};
-		getCountryCode();
+
+		if (window.location.hostname !== 'localhost') {
+			getCountryCode();
+		} else {
+			setIsFromUS(true);
+		}
 	});
 	return (
 		<header>
@@ -35,9 +41,11 @@ const Header = () => {
 					</div>
 					<div className="ali-cta">
 						<Arrow className="arrow" />
-						<button className="btn btn-primary btn-cover">
+						<Link
+							to={'/motivation'}
+							className="btn btn-primary btn-cover">
 							Check this out
-						</button>
+						</Link>
 					</div>
 				</div>
 			)}

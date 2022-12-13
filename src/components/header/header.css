@@ -1,12 +1,12 @@
 header {
-	height: 140vh;
+	height: 120vh;
 	padding-top: 1rem;
 	overflow: hidden;
 }
 
 .header-container {
 	text-align: center;
-	height: 100%;
+	height: 80%;
 	position: relative;
 }
 
@@ -20,6 +20,7 @@ header {
 
 .btn-cover {
 	/* z-index: -1; */
+	color: var(--color-bg);
 	position: relative;
 	float: right;
 	top: 60px;
@@ -32,6 +33,9 @@ header {
 	color: var(--color-bg-variant);
 }
 
+.ali-text {
+	font-weight: bold;
+}
 /* =========================== CTA ======================== */
 .cta {
 	margin-top: 2.5rem;
@@ -86,20 +90,78 @@ header {
 /* ================================== MEDIA QUERIES (MEDIUM) =========================== */
 
 @media screen and (max-width: 1024px) {
+	.btn-cover {
+		top: 2rem;
+	}
 	header {
-		/* height: 68vh; */
+		height: 140vh;
+	}
+
+	.scroll-down {
+		bottom: 10rem;
+	}
+
+	.header-socials {
+		bottom: 7rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		height: 150vh;
+	}
+
+	.ali-text {
+		font-weight: bold;
+		text-align: justify;
+		margin-left: 2rem;
+		flex-shrink: 6;
+	}
+	.btn-cover {
+		font-size: 0.8rem;
+		float: right;
+		left: -0.7rem;
+		top: -3rem;
+	}
+	.arrow {
+		width: 5rem;
+		height: 5rem;
+		/* display: none; */
 	}
 }
 
 /* ================================== MEDIA QUERIES (SMALL) =========================== */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 426px) {
 	header {
-		height: 100vh;
+		height: 160vh;
 	}
 
 	.header-socials,
 	.scroll-down {
 		display: none;
+	}
+	.cover {
+		/* padding: 0; */
+		flex-direction: column;
+		align-items: center;
+		gap: 0.8rem;
+		height: 20vh;
+		padding: 0;
+	}
+	.ali-text {
+		font-size: x-small;
+		text-align: center;
+		margin: 0;
+	}
+
+	.arrow {
+		display: none;
+	}
+
+	.btn-cover {
+		position: unset;
+		font-size: 0.6rem;
+		margin-bottom: 2rem;
 	}
 }
