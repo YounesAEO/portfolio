@@ -53,3 +53,70 @@
 .back-to-top:hover {
 	box-shadow: 0 0 5px 0 black;
 }
+
+/* ================================== MEDIA QUERIES (MEDIUM) =========================== */
+
+@media screen and (max-width: 1024px) {
+	.content p {
+		font-size: 1rem;
+	}
+
+	.reason SVG {
+		width: 40rem;
+		height: 20rem;
+	}
+
+	.container-motivation > p {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.content p {
+		font-size: 0.8rem;
+	}
+
+	.reason SVG {
+		width: 30rem;
+		height: 10rem;
+	}
+
+	.container-motivation > p {
+		font-size: 1rem;
+	}
+}
+
+/* ================================== MEDIA QUERIES (MEDIUM) =========================== */
+
+@media screen and (max-width: 426px) {
+	.content p {
+		font-size: 0.6rem;
+	}
+
+	.reason SVG {
+		width: 30rem;
+		height: 10rem;
+		margin-top: 2rem;
+	}
+
+	.container-motivation > p {
+		font-size: 0.8rem;
+	}
+
+	.left,
+	.right {
+		flex-direction: column-reverse;
+	}
+
+	.back {
+		position: unset;
+		font-size: xx-large;
+		left: 0;
+		top: 0;
+		float: unset;
+	}
+
+	.back-to-top {
+		font-size: xx-large;
+	}
+}
