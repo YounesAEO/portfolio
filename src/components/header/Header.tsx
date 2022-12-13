@@ -12,11 +12,16 @@ const Header = () => {
 		const getCountryCode = async () => {
 			if (!localStorage.getItem('yaeo-country')) {
 				const response = await getLocationFromIp();
-				setIsFromUS(response.data.country_code === 'US');
-				localStorage.setItem(
-					'yaeo-country',
-					String(response.data.country_code === 'US')
-				);
+				const data = response.data
+					.trim()
+					.split('\n')
+					.reduce(function (obj, pair) {
+						pair = pair.split('=');
+						return (obj[pair[0]] = pair[1]), obj;
+					}, {});
+
+				setIsFromUS(data.loc === 'US');
+				localStorage.setItem('yaeo-country', String(data.loc === 'US'));
 			} else {
 				setIsFromUS(localStorage.getItem('yaeo-country') === 'true');
 			}
