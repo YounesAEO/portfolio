@@ -7,7 +7,7 @@ import { GrLinkTop } from 'react-icons/gr';
 
 const Motivation = () => {
 	const target = useLoaderData().toString();
-	return (
+	return target === 'jur' || target === 'odazjw' ? (
 		<div className="container container-motivation">
 			<Link
 				to={target === 'jur' ? '/portfolio' : '/personal'}
@@ -43,6 +43,14 @@ const Motivation = () => {
 			<a href="#start" className="back-to-top" title="Back to top">
 				<GrLinkTop />
 			</a>
+		</div>
+	) : (
+		<div id="error-page" className="container container-motivation">
+			<h1>Oops!</h1>
+			<p>Seems like you're on the wrong page</p>
+			<Link to={'/portfolio'}>
+				<p>Go to portfolio</p>
+			</Link>
 		</div>
 	);
 };
