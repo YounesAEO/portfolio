@@ -6,7 +6,7 @@ import { getLocationFromIp } from '../../utils/geo';
 import { ReactComponent as Arrow } from '../../assets/arrow-2.svg';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ forAli = true }) => {
 	const [isFromUS, setIsFromUS] = useState(false);
 	useEffect(() => {
 		const getCountryCode = async () => {
@@ -41,12 +41,17 @@ const Header = () => {
 					</div> */}
 					<div className="ali-text">
 						Seems like you're visiting from the US, If you're name
-						starts with A and ends with I{' '}
+						starts with {forAli ? 'A' : 'F'} and ends with{' '}
+						{forAli ? 'I' : 'N'}{' '}
 					</div>
 					<div className="ali-cta">
 						<Arrow className="arrow" />
 						<Link
-							to={'/motivation'}
+							to={
+								forAli
+									? '/motivation/jur'
+									: '/motivation/odazjw'
+							}
 							className="btn btn-primary btn-cover">
 							Check this out
 						</Link>

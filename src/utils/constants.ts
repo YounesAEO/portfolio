@@ -25,6 +25,7 @@ export const REASONS = [
         and adapt to a new programming language, tech stack, or
         technology</strong>.`,
 		SVG: MotivationTech,
+		for: ['jur', 'odazjw'],
 	},
 	{
 		title: 'Business acumen',
@@ -42,6 +43,24 @@ export const REASONS = [
         business side and its challenges in order to build
         impactful solutions for the company.`,
 		SVG: MotivationBiz,
+		for: ['jur'],
+	},
+	{
+		title: 'Business acumen',
+		content: `In today's economy, <strong>business and technology have become
+        extremely symbiotic.</strong> <br />
+        However, <strong>most engineers lack the understanding of
+        business challenges </strong> when it comes to building their
+        solutions. <br />I can say that I am very fortunate to
+        have the opportunity to <strong> work inside an innovation hub
+        and closely observe and analyze many challenges startups
+        confront </strong>when it comes to business decisions. <br /> 
+		I believe each single member
+        of the team especially engineers needs to understand the
+        business side and its challenges in order to build
+        impactful solutions for the company.`,
+		SVG: MotivationBiz,
+		for: ['odazjw'],
 	},
 	{
 		title: 'Teamworking',
@@ -55,6 +74,7 @@ export const REASONS = [
         most of the time useless, low-frequency, and time
         consuming.`,
 		SVG: MotivationTeamworking,
+		for: ['jur', 'odazjw'],
 	},
 	{
 		title: 'Curious child',
@@ -68,6 +88,21 @@ export const REASONS = [
         being efficient and productive, but <strong> It's also a way to
         come up with creative and original ideas.</strong>`,
 		SVG: MotivatinCurious,
+		for: ['jur'],
+	},
+	{
+		title: 'Curious child',
+		content: `<strong> My strongest asset is curiosity!</strong> I thrive to learn about
+        new stuff and go down the rabbit hole to discover new
+        ideas and concepts. In fact, <strong>one of the reasons I
+        particularly aspire to get into thirdweb is to learn from
+        you Furqan </strong>(You exited applovin, now you crushing it with
+        thirdweb, so you clearly know how to win). <br />I must
+        admit that <strong>it's sometimes a bad habit</strong> when It comes to
+        being efficient and productive, but <strong> It's also a way to
+        come up with creative and original ideas.</strong>`,
+		SVG: MotivatinCurious,
+		for: ['odazjw'],
 	},
 	{
 		title: 'I am a winner',
@@ -86,6 +121,7 @@ export const REASONS = [
         but to rightly show that <strong>those circumstances are in fact
         the reason why I am and will always be a winner.</strong>`,
 		SVG: MotivationWinner,
+		for: ['jur', 'odazjw'],
 	},
 ];
 
