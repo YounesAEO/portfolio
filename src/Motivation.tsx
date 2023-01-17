@@ -10,7 +10,7 @@ const Motivation = () => {
 	return target === 'jur' || target === 'odazjw' ? (
 		<div className="container container-motivation">
 			<Link
-				to={target === 'jur' ? '/portfolio' : '/personal'}
+				to={target === 'jur' ? '/' : '/personal'}
 				className="back"
 				title="Go back to portfolio">
 				<TiArrowBack />
@@ -48,7 +48,7 @@ const Motivation = () => {
 		<div id="error-page" className="container container-motivation">
 			<h1>Oops!</h1>
 			<p>Seems like you're on the wrong page</p>
-			<Link to={'/portfolio'}>
+			<Link to={'/'}>
 				<p>Go to portfolio</p>
 			</Link>
 		</div>
